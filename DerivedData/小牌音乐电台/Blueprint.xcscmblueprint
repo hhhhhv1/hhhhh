@@ -1,0 +1,23 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "EA25D6EE27849678200768A474FADB7857696E4C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "EA25D6EE27849678200768A474FADB7857696E4C" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "45CA1459-28E3-4DA5-A044-B459EB13B144",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "EA25D6EE27849678200768A474FADB7857696E4C" : "hhhhh\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "小牌音乐电台",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "小牌音乐电台.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/hhhhhv1\/hhhhh.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EA25D6EE27849678200768A474FADB7857696E4C"
+    }
+  ]
+}
