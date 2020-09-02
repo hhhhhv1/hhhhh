@@ -145,6 +145,8 @@
 		01293DE924FF42E400C57573 /* 小牌音乐电台mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "小牌音乐电台mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		01293DF524FF42EC00C57573 /* 小牌音乐电台UITestsmac.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "小牌音乐电台UITestsmac.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		01293DF924FF44C400C57573 /* 小牌音乐电台mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "小牌音乐电台mac.entitlements"; sourceTree = "<group>"; };
+		012A212D250011BA0069451C /* 小牌音乐电台.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "小牌音乐电台.entitlements"; sourceTree = "<group>"; };
+		012A212E250011F00069451C /* 小牌音乐电台Release.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "小牌音乐电台Release.entitlements"; sourceTree = "<group>"; };
 		2C5545BA1C1124DE00728469 /* 小牌音乐电台UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "小牌音乐电台UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C5545BC1C1124DE00728469 /* SwiftRadioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftRadioUITests.swift; sourceTree = "<group>"; };
 		2C5545BE1C1124DE00728469 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -305,6 +307,8 @@
 		9409E10D1ABF6FE900312E2B = {
 			isa = PBXGroup;
 			children = (
+				012A212E250011F00069451C /* 小牌音乐电台Release.entitlements */,
+				012A212D250011BA0069451C /* 小牌音乐电台.entitlements */,
 				01293DF924FF44C400C57573 /* 小牌音乐电台mac.entitlements */,
 				01293C8D24FF412700C57573 /* 中文和鸟语 */,
 				9409E1181ABF6FEA00312E2B /* SwiftRadio */,
@@ -994,6 +998,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "小牌音乐电台.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1004,7 +1009,7 @@
 					"$(PROJECT_DIR)/SwiftRadio",
 				);
 				INFOPLIST_FILE = SwiftRadio/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1013,6 +1018,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = page.bbbbb.hhhhh;
 				PRODUCT_NAME = "小牌音乐电台";
 				PROVISIONING_PROFILE = "";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1023,17 +1029,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "小牌音乐电台Release.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = C7JVR6Z3YJ;
+				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/SwiftRadio",
 				);
 				INFOPLIST_FILE = SwiftRadio/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1042,6 +1050,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = page.bbbbb.hhhhh;
 				PRODUCT_NAME = "小牌音乐电台";
 				PROVISIONING_PROFILE = "";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
